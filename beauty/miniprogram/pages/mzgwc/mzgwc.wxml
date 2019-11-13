@@ -1,0 +1,67 @@
+<!--pages/mzgwc/mzgwc.wxml-->
+<view class="all">
+  <!-- 购物车中有商品的时候 -->
+  <view class="{{num==1?'top':'top001'}}" >
+    <!-- 购物车顶部 -->
+    <view class="top0">
+      <text>图标</text>
+    </view>
+    <!-- 地址 -->
+    <view class="top1">
+      <!-- 地址图标 -->
+      <image src="/images/shdz.png" class="top11"></image>
+      <text  class="top12">暂无地址，请点击选择地址</text>
+      <text class="top13"></text>
+    </view>
+    <!-- 购物车商品 -->
+    <van-checkbox-group value="{{ checked}}"  bind:change="onChange">
+      <view class="top2" wx:for="{{list}}" wx:key="{{index}}" >
+        <view class="top110">
+          <van-checkbox name="{{item._id}}" ></van-checkbox><!--单选按钮-->
+        </view>
+        <view class="top21">
+            <image src="{{item.image}}" class="top211"></image>
+            <view class="top5">{{item.pname}}</view>
+            <view class="top6">{{item.price}}</view>
+        </view>
+        <view class="top22">
+          <van-stepper value="{{item.count}}" bind:change="onChangeSum" />
+        </view>
+        <!-- 删除按钮   -->
+        <image src="/images/spgb.png" class="top23" bindtap="sc" data-spid="{{item._id}}"></image>
+      </view>
+    </van-checkbox-group>  
+    <!-- 全选和结算 -->
+    <view class="{{num==1?'foot':'foot001'}}">
+      <view class="foot1">
+        <van-checkbox value="{{ checkeds }}" bind:change="onChanges">全选</van-checkbox><!--全选按钮-->
+      </view>
+      <view class="foot2">
+        <text class="foot20">¥{{price}}</text>
+        <text class="foot21">结算</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 购物车默认样式 -->
+  <view class="{{num==0?'top3':'top003'}}">
+    <view class="top31" bindtap="click">空空如也,点此跳转去商品列表</view><!--点击跳转到商品列表-->
+    <image src="/images/sygwc.png" class="top32"></image>
+  </view>
+  
+  
+  <!-- 促销 -->
+  <view class="body">
+    <view class="bd1">促销</view>
+    <view class="bd10" wx:for="{{details}}" wx:key="index">
+        <view class="bd11" bindtap="xq" data-id="{{item.pid}}">
+            <image src="{{item.image}}" class="bd110"></image>
+            <view class="bd20">{{item.pname}}</view>
+            <view class="bd30">¥{{item.price}}</view>
+        </view> 
+        <view class="bd3">
+          <van-stepper value="{{ 1 }}" bind:change="onChange" />
+        </view>
+    </view>    
+  </view>
+</view>

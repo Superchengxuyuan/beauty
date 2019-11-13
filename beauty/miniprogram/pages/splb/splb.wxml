@@ -1,0 +1,79 @@
+<!--pages/splb/splb.wxml-->
+<view class="all">
+  <!-- 顶部搜索框 -->
+  <view class="top">
+    <input placeholder="请输入搜索内容" class="top1" bindtap="click"></input>
+    <text class="top2">搜索</text>
+  </view>
+  <view class="bd1">
+    <!-- 默认模块 -->
+    <van-tabs active="a">
+      <van-tab title="默认"  name="a">
+        <view class="body" >
+          <view class="bd2"  wx:for="{{list}}" wx:key="index">
+            <view bindtap="xq" data-id="{{item.pid}}">
+              <image src="{{item.image}}" class="bd21" ></image>
+              <view class="bd22" >{{item.pname}}</view>
+              <text class="bd23">折优惠</text>
+              <text class="bd24" >包邮</text>
+              <view class="bd25" >¥{{item.price}}</view>
+              <text class="bd26" >{{item.payp}}人付款</text>
+            </view>
+            <view class="bd27">
+            <image src="/images/gwc.png" class="gwc" bindtap="div_b" data-img="{{index}}">{{n}}</image>
+            </view>
+          </view>
+        </view>
+      </van-tab>
+      <!-- 价格模块 -->
+      
+      <van-tab title="价格" name="b">
+        <view class="body">
+          <view class="bd2"  wx:for="{{list}}" wx:key="index">
+            <image src="{{item.image}}" class="bd21"></image>
+            <view class="bd22">{{item.pname}}</view>
+            <text class="bd23">折优惠</text>
+            <text class="bd24">包邮</text>
+            <view class="bd25">¥{{item.price}}</view>
+            <text class="bd26">{{item.payp}}人付款</text>
+            <image src="/images/gwc.png" class="gwc"></image>
+          </view>
+        </view>
+      </van-tab>
+      <!-- 销量模块 -->
+      <van-tab title="销量" name="c">
+        <view class="body">
+          <view class="bd2"  wx:for="{{list}}" wx:key="index">
+            <image src="{{item.image}}" class="bd21"></image>
+            <view class="bd22">{{item.pname}}</view>
+            <text class="bd23">折优惠</text>
+            <text class="bd24">包邮</text>
+            <view class="bd25">¥{{item.price}}</view>
+            <text class="bd26">{{item.payp}}人付款</text>
+            <image src="/images/gwc.png" class="gwc"></image>
+          </view>
+        </view>
+      </van-tab>
+    </van-tabs>
+  </view>
+
+  <!-- 显示加入购物车 -->
+          <view class="{{num==1?'active':'active1'}}">
+            <view class="bd33">
+              <image src="{{list[index1].image}}" class="bd31"></image>
+              <image src="/images/spgb.png" class="bd35" bindtap="gb"></image>
+              <view class="bd30">
+                <view class="bd25">¥{{list[index1].price}}</view>
+                <view class="bd22">库存999</view>
+              </view>
+            </view>  
+              <!-- 购买数量 -->
+              <view class="bd32">
+                <text>购买数量</text>
+                <van-stepper value="{{ 1 }}" bind:change="onChange" />
+              </view>
+              <view class="bd34" bindtap="add" data-id="{{list[index1]._id}}" data-ig="{{list[index1].image}}" data-jg="{{list[index1].price}}" data-spmz="{{list[index1].pname}}">加入购物车</view>
+          </view>
+
+</view>
+<view class="{{num==1?'zz':''}}"></view>

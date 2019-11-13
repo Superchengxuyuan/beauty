@@ -1,0 +1,68 @@
+<!--pages/mzwd/mzwd.wxml-->
+<!--我的-->
+<view class="wode">
+  <!--头部-->
+  <view class="toubu">
+    <view class="touxiang">
+      <view class="login_img">
+        <open-data type="userAvatarUrl"></open-data>
+      <!-- <image src="{{img}}" style="width:120rpx;height:120rpx;"></image> -->
+      </view>
+      <view class="login_d_txt">
+        <open-data type="userNickName" class="login_txt"></open-data>
+      <!-- <text class="login_txt" style="color:white;font-size:30rpx;">{{txt}}</text> -->
+      </view>
+    </view>
+  </view>
+  <!--订单-->
+  <view class="dingdan">
+    <view class="dingdan1">
+      <text class="dingdanz">所有订单</text>
+      <text class="dingdanx">></text>
+    </view>
+    <view class="dingdan2">
+      <view>
+        <image src="cloud://webliu-hwmjw.7765-webliu-hwmjw-1300466982/daizhifu.png"></image>
+        <text>待付款</text>
+      </view>
+      <view>
+        <image src="cloud://webliu-hwmjw.7765-webliu-hwmjw-1300466982/jinxing.png"></image>
+        <text>进行中</text>
+      </view>
+      <view>
+        <image src="cloud://webliu-hwmjw.7765-webliu-hwmjw-1300466982/wancheng.png"></image>
+        <text>已完成</text>
+      </view>
+      <view>
+        <image src="cloud://webliu-hwmjw.7765-webliu-hwmjw-1300466982/quxiao.png"></image>
+        <text>已取消</text>
+      </view>
+    </view>
+  </view>
+  <!--信息-->
+  <view class="xinxi">
+    <view>
+      <text>我的信息</text>
+    </view>
+    <view>
+      <image src="cloud://webliu-hwmjw.7765-webliu-hwmjw-1300466982/dizhi.png"></image>
+      <text>地址</text>
+    </view>
+    <view>
+      <image src="cloud://webliu-hwmjw.7765-webliu-hwmjw-1300466982/gouwuche.png"></image>
+      <text>购物车</text>
+    </view>
+    <view>
+      <image src="cloud://webliu-hwmjw.7765-webliu-hwmjw-1300466982/tongzhi.png"></image>
+      <text>系统通知</text>
+    </view>
+    <view>
+      <image src="cloud://webliu-hwmjw.7765-webliu-hwmjw-1300466982/zuji.png"></image>
+      <text>足迹</text>
+    </view>
+    <view>
+      <image src="cloud://webliu-hwmjw.7765-webliu-hwmjw-1300466982/shoucang.png"></image>
+      <text>收藏</text>
+    </view>
+  </view>
+</view>

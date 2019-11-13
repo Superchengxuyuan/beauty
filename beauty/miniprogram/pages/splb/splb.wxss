@@ -1,0 +1,162 @@
+/* pages/splb/splb.wxss */
+.all{
+  width:100%;
+  height:100%;
+}
+.top{
+  height:100rpx;
+  background:#dfdfdf;
+  width:700rpx;
+  margin: 0 auto;
+}
+.top1{
+  display: inline-block;
+  height:60rpx;
+  vertical-align: middle;
+  width:500rpx;
+  background: #fff;
+  margin-left: 40rpx;
+}
+.top2{
+  display: inline-block;
+  height:60rpx;
+  width:80rpx;
+  text-align: center;
+  line-height: 60rpx;
+  background: #dfdfdf;
+  border-top-right-radius:5px;
+  border-bottom-right-radius:5px;
+  margin-top:20rpx; 
+}
+.bd1{
+  height:60rpx;
+  line-height: 60rpx;
+  margin-left: 10rpx;
+  width:700rpx;
+  margin: 0 auto;
+}
+.bd1 text{
+  font-size: 0.28125rem;
+  color: rgb(102, 102, 102);
+}
+.bd12,.bd13{
+  margin-left:30rpx;
+}
+.body{
+  display: flex;
+   justify-content: space-around;
+  flex-wrap: wrap;
+}
+.bd2{
+  width:48%;
+  height:500rpx;
+  position: relative;
+}
+.bd21{
+  height:300rpx;
+  width:100%;
+}
+.bd22{
+  color: #333;
+  font-size: .28rem;
+  height:30rpx;
+}
+.bd23 ,.bd24{
+  color: rgb(249, 61, 40);
+  background: rgba(249, 61, 40, 0.2);
+  border-radius: 10%;
+  font-size: 0.328125rem;
+  height:30rpx;
+}
+.bd24{
+  margin-left:10rpx;
+ 
+}
+.bd25{
+  color:rgb(249, 61, 40);
+  height:40rpx;
+}
+.bd26{
+  height:30rpx;
+}
+
+.gwc{
+  width:40rpx;
+  height:40rpx;
+  position: absolute;
+  right:10rpx;
+  bottom:30rpx;
+  z-index: 999;
+  margin-right: 20rpx;
+}
+.bd31{
+  width:250rpx;
+  height:250rpx;
+  float:left;
+}
+.bd30{
+  float:left;
+  line-height: 250rpx;
+  margin-left: 20rpx;
+}
+.bd32{
+  display: flex;
+  height: 50rpx;
+  line-height: 50rpx;
+  justify-content: space-between;
+}
+.bd35{
+  float:right;
+  width: 50rpx;
+  height:50rpx;
+  margin-top: 30rpx;
+  margin-right:30rpx;
+}
+.bd33:after{/*伪元素是行内元素 正常浏览器清除浮动方法*/
+  content: "";
+  display: block;
+  height: 0;
+  clear:both;
+  visibility: hidden;
+  }
+/*加入购物车按钮*/
+.bd34{
+  text-align: center;
+  margin-top:20rpx;
+  background: rgb(98, 98, 98);
+  color:#fff;
+  font-size: .3rem; 
+  height:80rpx;
+  line-height: 80rpx;
+}
+.active1{
+  display: none;
+}
+/*显示加入购物车*/
+.active{ 
+  display: block;
+  position: fixed;
+  bottom:0rpx;
+  z-index: 999;
+  background: #fff;
+  width:100%;
+}
+/* 遮罩层 */
+.zz{
+  position:fixed;
+  width: 100%;
+  height: 100%;
+  background:#000;
+  opacity:0.3;
+  z-index: 1;
+  overflow: hidden;
+}
+.wa{
+  width:60rpx;
+  height:80rpx;
+  background: #000;
+  z-index: 999;
+  position: absolute;
+  left:320rpx;
+  top:-80rpx;
+}

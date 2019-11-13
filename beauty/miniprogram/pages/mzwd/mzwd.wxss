@@ -1,0 +1,100 @@
+/* pages/mzwd/mzwd.wxss */
+/* 我的 */
+.wode{
+  background-color: rgb(239, 239, 239);
+}
+/*头部*/
+.toubu{
+  height: 300rpx;
+  background-color: #FFA114;
+  border-radius:0 0 100rpx 100rpx;  
+}
+.touxiang{
+  position: absolute;
+  top: 30rpx;
+  left: 41%;
+  width: 120rpx;height: 120rpx;
+}
+.touxiangtu{
+  width: 120rpx;height: 120rpx;
+  border-radius: 50%;
+}
+.dengluwen{
+  display: block;
+  font-size: 23rpx;
+  color: #fff;
+}
+/*订单*/
+.dingdan{
+  width: 660rpx;height: 220rpx;
+  background-color: #fff;
+  margin: 0 auto;
+  margin-top: -80rpx;
+  border-radius: 10rpx;
+}
+.dingdan1{
+  width: 620rpx;height: 90rpx;
+  border-bottom: 1px solid rgb(239, 239, 239);
+  margin: 0 auto;
+  line-height: 90rpx;
+}
+.dingdanz{
+  font-size: 40rpx;
+}
+.dingdanx{
+  float: right;
+  font-size: 60rpx;
+  color: #999;
+}
+.dingdan2 view{
+  width: 100rpx;height: 100rpx;
+  margin-left: 50rpx;
+  margin-top: 10rpx;
+  float: left;
+}
+.dingdan2 view image{
+  width: 80rpx;height: 80rpx;
+}
+.dingdan2 view text{
+  display: block;
+  font-size: 25rpx;
+  margin-top: -10rpx;
+}
+/*信息*/
+.xinxi{
+  width: 660rpx;height: 600rpx;
+  background-color: #fff;
+  margin: 0 auto;
+  margin-top: 20rpx;
+  border-radius: 10rpx;
+}
+.xinxi view{
+  width: 620rpx;height: 100rpx;
+  border-bottom: 1px solid rgb(239, 239, 239);
+  margin: 0 auto;
+}
+.xinxi view image{
+  width: 60rpx;height: 60rpx;
+  margin-left: 50rpx;
+  margin-top: 20rpx;
+}
+.xinxi view text{
+  position: absolute;
+  margin-left:40rpx;
+  margin-top: 30rpx;
+  font-size: 30rpx;
+}
+.login_img{
+  display: block;
+  width:120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.login_txt{
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top:10rpx;
+}

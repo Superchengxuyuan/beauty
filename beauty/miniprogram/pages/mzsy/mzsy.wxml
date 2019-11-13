@@ -1,0 +1,114 @@
+<!--pages/mzsy/mzsy.wxml-->
+<view class="all">
+  <view class="top">
+    <view class="top1">
+      <!-- 搜索框 -->
+      <view bindtap="click">
+        <van-search value="{{ value }}" bind:search="onSearch" placeholder="请输入搜索关键词" class="se1"/>
+      </view>
+      <view class="top11">
+        <!-- 正品保障 -->
+        <view class="top111">
+          <image src="cloud://webliu-hwmjw.7765-webliu-hwmjw-1300466982/syzp.png" class="img1"></image>正品保障   
+        </view>
+        <!-- 包邮 -->
+        <view class="top111">
+          <image src="cloud://webliu-hwmjw.7765-webliu-hwmjw-1300466982/syby.png" class="img2"></image>包邮
+        </view>
+        <!-- 售后无忧 -->
+        <view class="top111">
+          <image src="cloud://webliu-hwmjw.7765-webliu-hwmjw-1300466982/sysh.png" class="img3"></image>售后无忧
+        </view>
+      </view>
+    </view>
+    <!-- 轮播图 -->
+    <view class="lb">
+      <swiper indicator-dots="true" autoplay="true" interval="5000" duration="500" circular="true" style="height:300rpx;width:100%">
+      <swiper-item>
+      <image src="cloud://webliu-hwmjw.7765-webliu-hwmjw-1300466982/sylb.png" style="width:100%;height:100%"></image>
+      </swiper-item>
+      <swiper-item>
+      <image src="cloud://webliu-hwmjw.7765-webliu-hwmjw-1300466982/sylb.png" style="width:100%;height:100%;"></image>
+      </swiper-item>
+      </swiper>
+    </view>
+  </view>
+  <view class="top2">
+    <view class="top21">
+      <view class="top211">
+        <image src="cloud://webliu-hwmjw.7765-webliu-hwmjw-1300466982/syfl.png" class="img4"></image><text>分类</text>
+      </view>
+      <view class="top211">
+        <image src="cloud://webliu-hwmjw.7765-webliu-hwmjw-1300466982/sytm.png" class="img4"></image><text>特卖</text>
+      </view>
+      <view class="top211">
+        <image src="cloud://webliu-hwmjw.7765-webliu-hwmjw-1300466982/syjf.png" class="img4"></image><text>积分</text>
+      </view>
+      <view class="top211">
+        <image src="cloud://webliu-hwmjw.7765-webliu-hwmjw-1300466982/sytop.png" class="img4"></image><text>TOP10</text>
+      </view>
+      <view class="top211">
+        <image src="cloud://webliu-hwmjw.7765-webliu-hwmjw-1300466982/sysy.png" class="img4"></image><text>试用</text>
+      </view>  
+    </view>
+    <view class="top22">
+      <view class="top221">
+        <view class="top222">
+          <text>特惠</text>
+          <text>199元</text>
+        </view>
+        <image src="cloud://webliu-hwmjw.7765-webliu-hwmjw-1300466982/syth.jpg" class="img5"></image>
+      </view>
+      <view class="top221">
+        <view class="top222">
+          <text>甄选</text>
+          <text>199元</text>
+        </view>
+        <image src="cloud://webliu-hwmjw.7765-webliu-hwmjw-1300466982/syzx.jpg" class="img5"></image>
+      </view>
+      <view class="top221">
+        <view class="top222">
+          <text>特惠</text>
+          <text>199元</text>
+        </view>
+        <image src="cloud://webliu-hwmjw.7765-webliu-hwmjw-1300466982/syth2.jpg" class="img5"></image>
+      </view>
+    </view> 
+  </view>
+
+
+
+  <view class="body">
+    <text>超好用的推荐</text>
+    <view class="bd1">
+      <image src="cloud://webliu-hwmjw.7765-webliu-hwmjw-1300466982/sytj1.png" class="bd11"></image>
+      <image src="cloud://webliu-hwmjw.7765-webliu-hwmjw-1300466982/sytj2.png" class="bd11" bindtap="tj2"></image>
+    </view>
+
+    <view class="bd2">
+      <view class="bd21">
+        <text>特惠</text>
+        <text>9.9元起</text>
+        <image src="cloud://webliu-hwmjw.7765-webliu-hwmjw-1300466982/syth3.jpg"></image>
+      </view>
+    
+      <view class="bd21">
+        <text>大牌</text>
+        <text>91.9元起</text>
+        <image src="cloud://webliu-hwmjw.7765-webliu-hwmjw-1300466982/sydp.jpg"></image>
+      </view>
+    
+      <view class="bd21">
+        <text>当季推荐</text>
+        <text>100元起</text>
+        <image src="cloud://webliu-hwmjw.7765-webliu-hwmjw-1300466982/sydj.png"></image>
+      </view>
+    
+      <view class="bd21">
+        <text>限时折扣</text>
+        <text>3折起</text>
+        <image src="cloud://webliu-hwmjw.7765-webliu-hwmjw-1300466982/syxs.jpg"></image>
+      </view>
+    </view>
+  </view>      
+</view>
